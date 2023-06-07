@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Kitab;
+    src: url(/assets/kitab-base.woff2);
+    unicode-range: U+200?, U+60C, U+618-61B, U+61F, U+621-63A, U+640-655, U+65C, U+660-66C, U+670-671, U+6CC, U+6D4, U+6D6-6DD, U+6DF-6E8, U+6EA-6ED, U+8F0-8F3, U+FD3E-FD3F, U+FDF2;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s;
+  }
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: poppins,sans-serif;
+    background-image: linear-gradient(to top,#684ac1 ,#991938);
+  }
+
+
+.container{
+    width: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    
+}
+
+.content_texte{
+    width: 100%;
+    min-height: 280px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    border:  solid 1px rgb(124, 124, 124);
+    font-family: 'Kitab';
+    border-radius: 5px;
+    padding: 10px;
+    color: blue;
+    overflow-y: hidden;
+}
+
+.body{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.curent_surat{
+    font-size: 18px;
+    color: blue;
+}
+.select_surat{
+    width: calc(100% / 2);
+    height: 50px;
+    border:  solid 1px #575757;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.disable .select_surat{
+    opacity: .5;
+    pointer-events: none;
+}
+.select_surat select{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    display: block;
+    border: none;
+    font-size: 18px;
+}
+
+.select_ayats{
+    margin-top: 20px;
+}
+.disable .select_ayats{
+    opacity: .5;
+    pointer-events: none;
+}
+.select_ayats input{
+    width: 90px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 20px;
+    outline: none;
+}
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: none;
+    background: blue;
+    color: white;
+}
